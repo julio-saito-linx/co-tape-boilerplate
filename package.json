@@ -1,0 +1,37 @@
+{
+  "name": "co-tape-boilerplate",
+  "version": "0.0.2",
+  "description": "guitar chords parser from markdown files",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tape tests/**/*.js | tap-spec",
+    "watch": "chokidar 'tests/**/*.js' 'src/**/*.js' --initial -c '(tape tests/**/*.js | tap-spec) && (tape tests/**/*.js | tap-min)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/saitodisse/co-tape-boilerplate.git"
+  },
+  "keywords": [
+    "chord"
+  ],
+  "author": "saitodisse",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/saitodisse/co-tape-boilerplate/issues"
+  },
+  "homepage": "https://github.com/saitodisse/co-tape-boilerplate#readme",
+  "engines": {
+    "node": ">=5.2.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.0.1",
+    "standard": "^5.1.1",
+    "tap-min": "^1.0.0",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.3"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "lodash.clone": "^3.0.3"
+  }
+}

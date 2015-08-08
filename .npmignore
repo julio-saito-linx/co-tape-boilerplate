@@ -1,0 +1,9 @@
+*.sublime-project
+.editorconfig
+.gitignore
+.eslintrc
+.npmignore
+.travis.yml
+Azkfile.*
+node_modules/
+tests/
